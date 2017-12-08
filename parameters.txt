@@ -1,0 +1,21 @@
+Solver Options
+Shuffel Train Data: yes
+Training epochs: 30
+Snapshot interval: 10.0
+Validation interval: 1.0
+Tracing Interval: 0
+Random seed: [none]
+Batch size: [network defaults]
+Sover type: Adam
+Base Learning Rate: 0.001
+
+Data Transformations
+Substract Mean: Image
+Crop Size: none
+
+Data Augmentations
+Flipping: None
+Noise: 0.0
+Contrast 0.0
+Whitening: No
+HSV Shifting: No
