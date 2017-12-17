@@ -28,7 +28,7 @@ class UserModel(Tower):
             model = slim.batch_norm(model, is_training=self.is_training, center=True, scale=True)
             
             model = slim.flatten(model)
-            model = slim.fully_connected(model, 64, scope='fc1')
+            model = slim.fully_connected(model, 2048, scope='fc1')
             model = slim.dropout(model, 0.7, is_training=self.is_training, scope='do3')
             model = slim.fully_connected(model, self.nclasses, activation_fn=None, scope='fc2')
             return model
